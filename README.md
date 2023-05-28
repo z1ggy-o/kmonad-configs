@@ -12,4 +12,5 @@
 - 使用 systemd 调用不同的 config
 	- 利用 repo 里的 systemd script 作为模板，修改 kmonad 和 config 文件的路径
 	- script 放到 `/etc/systemd/system/` 下面，然后调用 `systemctl daemon-reload` 之后，就可以启用添加的 script 了
+	- 如果不修改 config 地址，则需要把 config 放到 `/etc/kmonad/` 下面
 	- 利用 `sudo systemctl start kmonad@name` 来调用不同的 config
